@@ -141,16 +141,16 @@
             background: #1a1a1a;
         }
 
-        /* ---------- HERO BANNER ---------- */
+        /* ---------- HERO BANNER (REDUCED HEIGHT) ---------- */
         .hero {
             position: relative;
             background: linear-gradient(135deg, #006341 0%, #006341 33%, #ffffff 33%, #ffffff 66%, #ce1126 66%, #ce1126 100%);
             background-size: 100% 100%;
-            min-height: 88vh;
+            min-height: 65vh;
             display: flex;
             align-items: center;
             text-align: center;
-            padding: 60px 0;
+            padding: 40px 0;
         }
 
         .hero-overlay {
@@ -171,11 +171,11 @@
         }
 
         .hero-content h1 {
-            font-size: 3.8rem;
+            font-size: 3.5rem;
             font-weight: 800;
             text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.7);
             letter-spacing: 1px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .hero-content h1 span {
@@ -183,22 +183,22 @@
         }
 
         .hero-content .tagline {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 400;
             background: rgba(255, 255, 255, 0.75);
             display: inline-block;
-            padding: 8px 30px;
+            padding: 6px 28px;
             border-radius: 40px;
             backdrop-filter: blur(4px);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .hero-content p {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             max-width: 750px;
-            margin: 0 auto 30px;
+            margin: 0 auto 25px;
             background: rgba(255, 255, 255, 0.70);
-            padding: 15px 25px;
+            padding: 14px 24px;
             border-radius: 12px;
             backdrop-filter: blur(3px);
         }
@@ -208,9 +208,9 @@
             background-color: #ce1126;
             color: #fff;
             font-weight: 700;
-            padding: 16px 40px;
+            padding: 14px 36px;
             border-radius: 50px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: background 0.3s, transform 0.2s;
             box-shadow: 0 6px 18px rgba(206, 17, 38, 0.35);
             border: 2px solid #ce1126;
@@ -237,11 +237,11 @@
 
         /* ---------- SECCIONES ---------- */
         section {
-            padding: 70px 0;
+            padding: 60px 0;
         }
 
         .section-title {
-            font-size: 2.6rem;
+            font-size: 2.4rem;
             font-weight: 700;
             text-align: center;
             margin-bottom: 15px;
@@ -253,10 +253,10 @@
 
         .section-sub {
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: #4a4a4a;
             max-width: 700px;
-            margin: 0 auto 40px;
+            margin: 0 auto 35px;
         }
 
         .bg-light {
@@ -281,7 +281,7 @@
         }
 
         .about-grid .text-block p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 16px;
             color: #2d2d2d;
         }
@@ -294,7 +294,7 @@
         .about-grid .text-block ul li {
             padding: 8px 0;
             border-bottom: 1px solid #e0dcd6;
-            font-size: 1.05rem;
+            font-size: 1rem;
         }
 
         .about-grid .text-block ul li::before {
@@ -305,7 +305,7 @@
             background: #e8e2d9;
             border-radius: 20px;
             overflow: hidden;
-            min-height: 280px;
+            min-height: 250px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -319,13 +319,13 @@
             height: auto;
             display: block;
             object-fit: cover;
-            max-height: 400px;
+            max-height: 350px;
         }
 
         /* ---------- GALERÍA ---------- */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 25px;
             margin-top: 20px;
         }
@@ -346,7 +346,7 @@
 
         .gallery-item img {
             width: 100%;
-            height: 220px;
+            height: 200px;
             object-fit: cover;
             display: block;
             background: #f3efe9;
@@ -388,7 +388,7 @@
         /* ---------- CONTACTO ---------- */
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 30px;
             margin-top: 20px;
         }
@@ -408,17 +408,17 @@
         }
 
         .contact-card .icon {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             margin-bottom: 8px;
         }
 
         .contact-card h3 {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             margin-bottom: 6px;
         }
 
         .contact-card p {
-            font-size: 1.05rem;
+            font-size: 1rem;
             color: #2d2d2d;
             word-break: break-word;
         }
@@ -440,7 +440,7 @@
             padding: 12px 28px;
             border-radius: 50px;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-top: 12px;
             transition: background 0.3s, transform 0.2s;
             border: none;
@@ -449,10 +449,6 @@
         .btn-whatsapp:hover {
             background: #1da851;
             transform: scale(1.03);
-        }
-
-        .btn-whatsapp i {
-            margin-right: 10px;
         }
 
         /* ---------- FOOTER ---------- */
@@ -487,13 +483,17 @@
                 grid-template-columns: 1fr;
             }
 
+            .hero {
+                min-height: 55vh;
+            }
+
             .hero-content h1 {
-                font-size: 2.8rem;
+                font-size: 2.6rem;
             }
 
             .hero-content .tagline {
-                font-size: 1.3rem;
-                padding: 6px 20px;
+                font-size: 1.2rem;
+                padding: 5px 18px;
             }
 
             .btn-outline {
@@ -502,7 +502,7 @@
             }
 
             .section-title {
-                font-size: 2.1rem;
+                font-size: 2rem;
             }
 
             .lang-toggle-wrapper {
@@ -530,21 +530,22 @@
 
         @media (max-width: 500px) {
             .hero {
-                min-height: 70vh;
+                min-height: 50vh;
+                padding: 30px 0;
             }
 
             .hero-content h1 {
-                font-size: 2.1rem;
+                font-size: 1.9rem;
             }
 
             .hero-content p {
-                font-size: 1rem;
-                padding: 12px 16px;
+                font-size: 0.95rem;
+                padding: 10px 14px;
             }
 
             .btn {
-                padding: 14px 28px;
-                font-size: 1rem;
+                padding: 12px 24px;
+                font-size: 0.95rem;
             }
 
             .gallery-grid {
@@ -560,7 +561,7 @@
 <body>
 
     <!-- ============================================ -->
-    <!-- LANGUAGE TOGGLE (fixed top-right)           -->
+    <!-- LANGUAGE TOGGLE                             -->
     <!-- ============================================ -->
     <div class="lang-toggle-wrapper" id="langToggleWrapper">
         <span class="lang-label" id="langLabel">🇪🇸 ES</span>
@@ -640,25 +641,41 @@
             </p>
 
             <div class="gallery-grid">
+                <!-- Design 1 -->
                 <div class="gallery-item">
                     <img src="mexico_socks_1.jpg" alt="Diseño de calcetines México 2026 - Clásico tricolor" loading="lazy">
-                    <div class="caption" data-es="Clásico Tricolor" data-en="Classic Tricolor">Clásico Tricolor <small data-es="Edición Mundial 2026" data-en="World Cup 2026 Edition">Edición Mundial 2026</small></div>
+                    <div class="caption">
+                        Clásico Tricolor
+                        <small data-es="Edición Mundial 2026" data-en="World Cup 2026 Edition">Edición Mundial 2026</small>
+                    </div>
                 </div>
+                <!-- Design 2 - FIXED: removed special character -->
                 <div class="gallery-item">
                     <img src="OIG4_1.jpg" alt="Diseño de calcetines México - estilo moderno" loading="lazy">
-                    <div class="caption" data-es="Estilo Azteca" data-en="Aztec Style">Estilo Azteca <small data-es="Negro con patrones" data-en="Black with patterns">Negro con patrones</small></div>
+                    <div class="caption">
+                        Estilo Azteca Moderno
+                        <small data-es="Patrones geométricos" data-en="Geometric patterns">Patrones geométricos</small>
+                    </div>
                 </div>
+                <!-- Design 3 -->
                 <div class="gallery-item">
                     <img src="OIG4.jpg" alt="Diseño de calcetines México - versión deportiva" loading="lazy">
-                    <div class="caption" data-es="Deportivo Élite" data-en="Elite Sport">Deportivo Élite <small data-es="Alta compresión" data-en="High compression">Alta compresión</small></div>
+                    <div class="caption">
+                        Deportivo Elite
+                        <small data-es="Alta compresión" data-en="High compression">Alta compresión</small>
+                    </div>
                 </div>
+                <!-- Design 4 - FIXED: simplified and cleaned up -->
                 <div class="gallery-item">
-                    <img src="SomosMexico.jpg" alt="Diseño Somos México - calcetines con mensaje" loading="lazy">
-                    <div class="caption" data-es="Somos México" data-en="We Are Mexico">Somos México <small data-es="Orgullo nacional" data-en="National pride">Orgullo nacional</small></div>
+                    <img src="SomosMexico.jpg" alt="Diseño Somos Mexico - calcetines con mensaje" loading="lazy">
+                    <div class="caption">
+                        Somos Mexico
+                        <small data-es="Orgullo nacional" data-en="National pride">Orgullo nacional</small>
+                    </div>
                 </div>
             </div>
 
-            <div style="text-align:center; margin-top:40px;">
+            <div style="text-align:center; margin-top:35px;">
                 <a href="#contacto" class="btn" data-es="¿Quieres tu propio diseño? →" data-en="Want your own design? →">¿Quieres tu propio diseño? →</a>
             </div>
         </div>
@@ -692,7 +709,7 @@
             </p>
 
             <div class="contact-grid">
-                <!-- Teléfono / Phone -->
+                <!-- Phone -->
                 <div class="contact-card">
                     <div class="icon">📞</div>
                     <h3 data-es="Teléfono" data-en="Phone">Teléfono</h3>
@@ -709,19 +726,19 @@
                     <div class="icon">✉️</div>
                     <h3 data-es="Correo electrónico" data-en="Email">Correo electrónico</h3>
                     <p><a href="mailto:info@CalcetinesMexico.com">info@CalcetinesMexico.com</a></p>
-                    <p style="font-size:0.9rem; color:#6b5f53; margin-top:6px;" data-es="Respondemos en < 24 hrs" data-en="We reply in < 24 hrs">Respondemos en < 24 hrs</p>
+                    <p style="font-size:0.9rem; color:#6b5f53; margin-top:6px;" data-es="Respondemos en menos de 24 hrs" data-en="We reply in less than 24 hrs">Respondemos en menos de 24 hrs</p>
                 </div>
 
-                <!-- Dirección / Address -->
+                <!-- Address -->
                 <div class="contact-card">
                     <div class="icon">📍</div>
                     <h3 data-es="Dirección" data-en="Address">Dirección</h3>
-                    <p><strong data-es="Puebla, Puebla" data-en="Puebla, Puebla">Puebla, Puebla</strong><br data-es="" data-en="">México</p>
+                    <p><strong data-es="Puebla, Puebla" data-en="Puebla, Puebla">Puebla, Puebla</strong><br>México</p>
                     <p style="font-size:0.9rem; color:#6b5f53; margin-top:6px;" data-es="Visita con cita previa" data-en="Visit by appointment only">Visita con cita previa</p>
                 </div>
             </div>
 
-            <div style="text-align:center; margin-top:35px; font-size:1.1rem;">
+            <div style="text-align:center; margin-top:30px; font-size:1.05rem;">
                 <p style="background:#fff; display:inline-block; padding:12px 32px; border-radius:40px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
                     🚚 <strong data-es="Envíos a todo México y exportación" data-en="Shipping throughout Mexico and export">Envíos a todo México y exportación</strong> <span data-es="— Cotiza sin compromiso" data-en="— Request a free quote">— Cotiza sin compromiso</span>
                 </p>
@@ -756,14 +773,13 @@
             const label = document.getElementById('langLabel');
 
             // ---- STATE ----
-            let currentLang = localStorage.getItem('calcetinesLang') || 'es'; // 'es' or 'en'
+            let currentLang = localStorage.getItem('calcetinesLang') || 'es';
 
             // ---- FUNCTION: update all translatable elements ----
             function setLanguage(lang) {
                 currentLang = lang;
                 localStorage.setItem('calcetinesLang', lang);
 
-                // Update toggle button appearance
                 if (lang === 'en') {
                     toggleBtn.classList.add('en');
                     label.textContent = '🇬🇧 EN';
@@ -772,12 +788,10 @@
                     label.textContent = '🇪🇸 ES';
                 }
 
-                // Find all elements with data-es and data-en
                 const elements = document.querySelectorAll('[data-es][data-en]');
                 elements.forEach(el => {
                     const text = el.getAttribute('data-' + lang);
                     if (text) {
-                        // If it contains HTML, set innerHTML; otherwise textContent
                         if (text.includes('<')) {
                             el.innerHTML = text;
                         } else {
@@ -786,15 +800,7 @@
                     }
                 });
 
-                // Update the HTML lang attribute
                 document.documentElement.lang = (lang === 'en') ? 'en-US' : 'es-MX';
-
-                // Special case: update the hero h1 (has a <span> inside, so handle separately)
-                const heroH1 = document.querySelector('.hero-content h1');
-                if (heroH1) {
-                    // The <span> stays, but we don't translate the brand name
-                    // It's fine as-is.
-                }
             }
 
             // ---- TOGGLE EVENT ----
@@ -806,7 +812,7 @@
             // ---- INITIAL LOAD ----
             setLanguage(currentLang);
 
-            // ---- SMOOTH SCROLL (unchanged) ----
+            // ---- SMOOTH SCROLL ----
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const href = this.getAttribute('href');
