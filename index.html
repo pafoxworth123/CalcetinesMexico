@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <!-- ============================================ -->
+    <!-- META TAGS & SEO                             -->
+    <!-- ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcetines México | Fábrica de Calcetines Personalizados</title>
+    <meta name="description" content="Fábrica de calcetines en Puebla, México. Producción personalizada para marcas, equipos y eventos. Diseños únicos para el Mundial 2026. Envíos nacionales e internacionales.">
+    <meta name="keywords" content="calcetines personalizados, fábrica de calcetines, calcetines México, producción de calcetines, calcetines Mundial 2026, calcetines deportivos, Puebla">
+    <meta name="author" content="Calcetines México">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://calcetinesmexico.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Calcetines México | Fábrica de Calcetines Personalizados">
+    <meta property="og:description" content="Producción de calcetines a medida para marcas, equipos y eventos. Diseños exclusivos para el Mundial 2026.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://calcetinesmexico.com/">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calcetines México | Fábrica de Calcetines Personalizados">
+    <meta name="twitter:description" content="Producción de calcetines a medida para marcas, equipos y eventos. Diseños exclusivos para el Mundial 2026.">
+
+    <!-- JSON-LD Schema (Local Business) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Calcetines México",
+        "description": "Fábrica de calcetines personalizados en Puebla, México. Producción nacional e internacional.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Puebla",
+            "addressRegion": "Puebla",
+            "addressCountry": "MX"
+        },
+        "telephone": "+52 221 6498364",
+        "email": "info@CalcetinesMexico.com",
+        "url": "https://calcetinesmexico.com/",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+52 221 6498364",
+            "contactType": "Ventas",
+            "availableLanguage": ["Español", "English"]
+        }
+    }
+    </script>
+
+    <!-- ============================================ -->
+    <!-- STYLES                                       -->
+    <!-- ============================================ -->
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #f8f5f0;
+            color: #1e1e1e;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ---------- LANGUAGE TOGGLE ---------- */
+        .lang-toggle-wrapper {
+            position: fixed;
+            top: 18px;
+            right: 20px;
+            z-index: 999;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(6px);
+            padding: 6px 10px 6px 14px;
+            border-radius: 50px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            border: 1px solid #ddd6cd;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .lang-toggle-wrapper .lang-label {
+            color: #2d2d2d;
+            margin-right: 2px;
+        }
+
+        .lang-toggle {
+            position: relative;
+            width: 56px;
+            height: 30px;
+            background: #ce1126;
+            border-radius: 30px;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+            flex-shrink: 0;
+        }
+
+        .lang-toggle::after {
+            content: "🇪🇸";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            transition: transform 0.3s, content 0.3s;
+            line-height: 1;
+        }
+
+        .lang-toggle.en::after {
+            content: "🇬🇧";
+            transform: translateX(26px);
+        }
+
+        .lang-toggle.en {
+            background: #1a1a1a;
+        }
+
+        /* ---------- HERO BANNER ---------- */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #006341 0%, #006341 33%, #ffffff 33%, #ffffff 66%, #ce1126 66%, #ce1126 100%);
+            background-size: 100% 100%;
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.50);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            color: #1a1a1a;
+        }
+
+        .hero-content h1 {
+            font-size: 3.8rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.7);
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .hero-content h1 span {
+            color: #ce1126;
+        }
+
+        .hero-content .tagline {
+            font-size: 1.6rem;
+            font-weight: 400;
+            background: rgba(255, 255, 255, 0.75);
+            display: inline-block;
+            padding: 8px 30px;
+            border-radius: 40px;
+            backdrop-filter: blur(4px);
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            max-width: 750px;
+            margin: 0 auto 30px;
+            background: rgba(255, 255, 255, 0.70);
+            padding: 15px 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(3px);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ce1126;
+            color: #fff;
+            font-weight: 700;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 6px 18px rgba(206, 17, 38, 0.35);
+            border: 2px solid #ce1126;
+        }
+
+        .btn:hover {
+            background-color: #a80d1e;
+            transform: scale(1.03);
+            border-color: #a80d1e;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #1a1a1a;
+            border: 2px solid #1a1a1a;
+            box-shadow: none;
+            margin-left: 12px;
+        }
+
+        .btn-outline:hover {
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        /* ---------- SECCIONES ---------- */
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            font-size: 2.6rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            color: #ce1126;
+        }
+
+        .section-sub {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .bg-light {
+            background-color: #ffffff;
+        }
+
+        .bg-soft {
+            background-color: #f0ede8;
+        }
+
+        /* ---------- NOSOTROS ---------- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-grid .text-block h2 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .about-grid .text-block p {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            color: #2d2d2d;
+        }
+
+        .about-grid .text-block ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-grid .text-block ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e0dcd6;
+            font-size: 1.05rem;
+        }
+
+        .about-grid .text-block ul li::before {
+            content: "🧦 ";
+        }
+
+        .about-grid .image-block {
+            background: #e8e2d9;
+            border-radius: 20px;
+            overflow: hidden;
+            min-height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80"><text x="10" y="55" font-size="40" opacity="0.15">🧦</text></svg>');
+            background-repeat: repeat;
+            background-size: 60px;
+        }
+
+        .about-grid .image-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            max-height: 400px;
+        }
+
+        /* ---------- GALERÍA ---------- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+            transition: transform 0.25s, box-shadow 0.25s;
+            border: 1px solid #e6e0d8;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 34px rgba(0,0,0,0.13);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            background: #f3efe9;
+        }
+
+        .gallery-item .caption {
+            padding: 14px 16px 18px;
+            text-align: center;
+            font-weight: 600;
+            color: #1e1e1e;
+            font-size: 1rem;
+            background: #faf8f5;
+        }
+
+        .gallery-item .caption small {
+            display: block;
+            font-weight: 400;
+            color: #6b5f53;
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        /* ---------- PROCESO ---------- */
+        .flow-wrapper {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .flow-wrapper img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+            border: 1px solid #ddd6cd;
+            background: #fff;
+            padding: 10px;
+        }
+
+        /* ---------- CONTACTO ---------- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .contact-card {
+            background: #fff;
+            padding: 28px 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+            border: 1px solid #ece6de;
+            transition: border-color 0.2s;
+        }
+
+        .contact-card:hover {
+            border-color: #ce1126;
+        }
+
+        .contact-card .icon {
+            font-size: 2.8rem;
+            margin-bottom: 8px;
+        }
+
+        .contact-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+        }
+
+        .contact-card p {
+            font-size: 1.05rem;
+            color: #2d2d2d;
+            word-break: break-word;
+        }
+
+        .contact-card a {
+            color: #1a1a1a;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .contact-card a:hover {
+            color: #ce1126;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background: #25D366;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 12px;
+            transition: background 0.3s, transform 0.2s;
+            border: none;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1da851;
+            transform: scale(1.03);
+        }
+
+        .btn-whatsapp i {
+            margin-right: 10px;
+        }
+
+        /* ---------- FOOTER ---------- */
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            color: #ce1126;
+        }
+
+        footer .footer-links {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 900px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1.3rem;
+                padding: 6px 20px;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+
+            .section-title {
+                font-size: 2.1rem;
+            }
+
+            .lang-toggle-wrapper {
+                top: 12px;
+                right: 12px;
+                padding: 4px 8px 4px 12px;
+                font-size: 0.8rem;
+            }
+
+            .lang-toggle {
+                width: 48px;
+                height: 26px;
+            }
+
+            .lang-toggle::after {
+                width: 20px;
+                height: 20px;
+                font-size: 12px;
+            }
+
+            .lang-toggle.en::after {
+                transform: translateX(22px);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .hero {
+                min-height: 70vh;
+            }
+
+            .hero-content h1 {
+                font-size: 2.1rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+                padding: 12px 16px;
+            }
+
+            .btn {
+                padding: 14px 28px;
+                font-size: 1rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- LANGUAGE TOGGLE (fixed top-right)           -->
+    <!-- ============================================ -->
+    <div class="lang-toggle-wrapper" id="langToggleWrapper">
+        <span class="lang-label" id="langLabel">🇪🇸 ES</span>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language"></button>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- HERO BANNER                                 -->
+    <!-- ============================================ -->
+    <header class="hero" role="banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <p class="tagline" data-es="🇲🇽 Hecho en Puebla, con orgullo 🇲🇽" data-en="🇲🇽 Made in Puebla, with pride 🇲🇽">🇲🇽 Hecho en Puebla, con orgullo 🇲🇽</p>
+            <h1>Calcetines <span>México</span></h1>
+            <p data-es="Fábrica especializada en <strong>calcetines personalizados</strong> para marcas, equipos deportivos, eventos y emprendedores. Producción nacional e internacional con estándares de calidad."
+               data-en="Specialized factory for <strong>custom socks</strong> for brands, sports teams, events, and entrepreneurs. National and international production with quality standards.">
+               Fábrica especializada en <strong>calcetines personalizados</strong> para marcas, equipos deportivos, eventos y emprendedores. Producción nacional e internacional con estándares de calidad.
+            </p>
+            <div>
+                <a href="#disenos" class="btn" data-es="Ver diseños" data-en="View designs">Ver diseños</a>
+                <a href="#contacto" class="btn btn-outline" data-es="Solicitar cotización" data-en="Request a quote">Solicitar cotización</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- NOSOTROS / ABOUT US                         -->
+    <!-- ============================================ -->
+    <section id="nosotros" class="bg-light">
+        <div class="container">
+            <div class="about-grid">
+                <div class="text-block">
+                    <h2 data-es="¿Quiénes somos?" data-en="Who we are">¿Quiénes somos?</h2>
+                    <p data-es="En <strong>Calcetines México</strong> llevamos más de 15 años transformando fibras en experiencias. Somos una fábrica 100% mexicana ubicada en <strong>Puebla, Puebla</strong>, con capacidad de producción de hasta <strong>50,000 pares mensuales</strong>."
+                       data-en="At <strong>Calcetines México</strong>, we have been transforming fibers into experiences for over 15 years. We are a 100% Mexican factory located in <strong>Puebla, Puebla</strong>, with a production capacity of up to <strong>50,000 pairs per month</strong>.">
+                       En <strong>Calcetines México</strong> llevamos más de 15 años transformando fibras en experiencias. Somos una fábrica 100% mexicana ubicada en <strong>Puebla, Puebla</strong>, con capacidad de producción de hasta <strong>50,000 pares mensuales</strong>.
+                    </p>
+                    <p data-es="Trabajamos con maquinaria de última generación y materiales de alta calidad (algodón peinado, poliéster, lycra, y mezclas técnicas) para ofrecer <strong>calcetines duraderos, cómodos y con identidad</strong>."
+                       data-en="We work with state-of-the-art machinery and high-quality materials (combed cotton, polyester, lycra, and technical blends) to offer <strong>durable, comfortable, and identity-driven socks</strong>.">
+                       Trabajamos con maquinaria de última generación y materiales de alta calidad (algodón peinado, poliéster, lycra, y mezclas técnicas) para ofrecer <strong>calcetines duraderos, cómodos y con identidad</strong>.
+                    </p>
+                    <ul>
+                        <li data-es="<strong>Personalización 100%:</strong> colores, tejidos, bordados y empaques a tu medida."
+                            data-en="<strong>100% Customization:</strong> colors, fabrics, embroidery, and packaging tailored to you.">
+                            <strong>Personalización 100%:</strong> colores, tejidos, bordados y empaques a tu medida.
+                        </li>
+                        <li data-es="<strong>Volumen flexible:</strong> desde pequeños lotes hasta grandes pedidos."
+                            data-en="<strong>Flexible volume:</strong> from small batches to large orders.">
+                            <strong>Volumen flexible:</strong> desde pequeños lotes hasta grandes pedidos.
+                        </li>
+                        <li data-es="<strong>Envíos a todo México y exportación</strong> a Estados Unidos, Canadá y Centroamérica."
+                            data-en="<strong>Shipping throughout Mexico and export</strong> to the United States, Canada, and Central America.">
+                            <strong>Envíos a todo México y exportación</strong> a Estados Unidos, Canadá y Centroamérica.
+                        </li>
+                        <li data-es="<strong>Tiempos de entrega ágiles</strong> (15–25 días hábiles)."
+                            data-en="<strong>Fast delivery times</strong> (15–25 business days).">
+                            <strong>Tiempos de entrega ágiles</strong> (15–25 días hábiles).
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-block">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23e8e2d9'/><text x='30' y='160' font-size='22' fill='%235a4d3e'>🧦 Fábrica en Puebla</text><text x='30' y='200' font-size='16' fill='%237a6b5a'>Producción de clase mundial</text></svg>" alt="Fábrica de calcetines en Puebla" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- GALERÍA DE DISEÑOS / DESIGNS GALLERY        -->
+    <!-- ============================================ -->
+    <section id="disenos" class="bg-soft">
+        <div class="container">
+            <h2 class="section-title"><span data-es="Diseños" data-en="Designs">Diseños</span> <span>Mundial 2026</span></h2>
+            <p class="section-sub" data-es="Inspirados en la selección mexicana y la pasión del futbol. Estos son algunos de nuestros modelos más recientes. <br>¿Tienes una idea? ¡Nosotros la hacemos realidad!"
+               data-en="Inspired by the Mexican national team and the passion for soccer. These are some of our latest models. <br>Have an idea? We'll make it happen!">
+               Inspirados en la selección mexicana y la pasión del futbol. Estos son algunos de nuestros modelos más recientes. <br>¿Tienes una idea? ¡Nosotros la hacemos realidad!
+            </p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="mexico_socks_1.jpg" alt="Diseño de calcetines México 2026 - Clásico tricolor" loading="lazy">
+                    <div class="caption" data-es="Clásico Tricolor" data-en="Classic Tricolor">Clásico Tricolor <small data-es="Edición Mundial 2026" data-en="World Cup 2026 Edition">Edición Mundial 2026</small></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="OIG4_1.jpg" alt="Diseño de calcetines México - estilo moderno" loading="lazy">
+                    <div class="caption" data-es="Estilo Azteca" data-en="Aztec Style">Estilo Azteca <small data-es="Negro con patrones" data-en="Black with patterns">Negro con patrones</small></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="OIG4.jpg" alt="Diseño de calcetines México - versión deportiva" loading="lazy">
+                    <div class="caption" data-es="Deportivo Élite" data-en="Elite Sport">Deportivo Élite <small data-es="Alta compresión" data-en="High compression">Alta compresión</small></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="SomosMexico.jpg" alt="Diseño Somos México - calcetines con mensaje" loading="lazy">
+                    <div class="caption" data-es="Somos México" data-en="We Are Mexico">Somos México <small data-es="Orgullo nacional" data-en="National pride">Orgullo nacional</small></div>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:40px;">
+                <a href="#contacto" class="btn" data-es="¿Quieres tu propio diseño? →" data-en="Want your own design? →">¿Quieres tu propio diseño? →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PROCESO DE PRODUCCIÓN / PRODUCTION PROCESS   -->
+    <!-- ============================================ -->
+    <section id="proceso" class="bg-light">
+        <div class="container">
+            <h2 class="section-title" data-es="Nuestro <span>Proceso</span>" data-en="Our <span>Process</span>">Nuestro <span>Proceso</span></h2>
+            <p class="section-sub" data-es="De la fibra a tu pie. Conoce cómo fabricamos cada par con calidad y trazabilidad."
+               data-en="From fiber to your feet. Learn how we manufacture each pair with quality and traceability.">
+               De la fibra a tu pie. Conoce cómo fabricamos cada par con calidad y trazabilidad.
+            </p>
+            <div class="flow-wrapper">
+                <img src="SOCKS_PRODUCTION_PROCESS.svg" alt="Diagrama de flujo del proceso de producción de calcetines en Calcetines México" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACTO / CONTACT                          -->
+    <!-- ============================================ -->
+    <section id="contacto" class="bg-soft">
+        <div class="container">
+            <h2 class="section-title" data-es="Contáctanos" data-en="Contact Us">Contáctanos</h2>
+            <p class="section-sub" data-es="Estamos listos para escuchar tu proyecto. Llámanos, escríbenos o visítanos en Puebla."
+               data-en="We're ready to hear about your project. Call us, write to us, or visit us in Puebla.">
+               Estamos listos para escuchar tu proyecto. Llámanos, escríbenos o visítanos en Puebla.
+            </p>
+
+            <div class="contact-grid">
+                <!-- Teléfono / Phone -->
+                <div class="contact-card">
+                    <div class="icon">📞</div>
+                    <h3 data-es="Teléfono" data-en="Phone">Teléfono</h3>
+                    <p><a href="tel:+522216498364">+52 221 649 8364</a></p>
+                    <a href="https://wa.me/522216498364?text=Hola%20Calcetines%20México%2C%20quiero%20información%20sobre%20sus%20calcetines%20personalizados." 
+                       target="_blank" 
+                       class="btn-whatsapp">
+                        💬 WhatsApp
+                    </a>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-card">
+                    <div class="icon">✉️</div>
+                    <h3 data-es="Correo electrónico" data-en="Email">Correo electrónico</h3>
+                    <p><a href="mailto:info@CalcetinesMexico.com">info@CalcetinesMexico.com</a></p>
+                    <p style="font-size:0.9rem; color:#6b5f53; margin-top:6px;" data-es="Respondemos en < 24 hrs" data-en="We reply in < 24 hrs">Respondemos en < 24 hrs</p>
+                </div>
+
+                <!-- Dirección / Address -->
+                <div class="contact-card">
+                    <div class="icon">📍</div>
+                    <h3 data-es="Dirección" data-en="Address">Dirección</h3>
+                    <p><strong data-es="Puebla, Puebla" data-en="Puebla, Puebla">Puebla, Puebla</strong><br data-es="" data-en="">México</p>
+                    <p style="font-size:0.9rem; color:#6b5f53; margin-top:6px;" data-es="Visita con cita previa" data-en="Visit by appointment only">Visita con cita previa</p>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:35px; font-size:1.1rem;">
+                <p style="background:#fff; display:inline-block; padding:12px 32px; border-radius:40px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+                    🚚 <strong data-es="Envíos a todo México y exportación" data-en="Shipping throughout Mexico and export">Envíos a todo México y exportación</strong> <span data-es="— Cotiza sin compromiso" data-en="— Request a free quote">— Cotiza sin compromiso</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <strong>Calcetines México</strong> <span data-es="— Fábrica de calcetines personalizados" data-en="— Custom sock factory">— Fábrica de calcetines personalizados</span></p>
+            <div class="footer-links">
+                <a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a>
+                <a href="#disenos" data-es="Diseños" data-en="Designs">Diseños</a>
+                <a href="#proceso" data-es="Proceso" data-en="Process">Proceso</a>
+                <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+                <a href="mailto:info@CalcetinesMexico.com">info@CalcetinesMexico.com</a>
+            </div>
+            <p style="margin-top:12px; font-size:0.8rem; color:#888;">Puebla, Puebla · México · +52 221 6498364</p>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT: Language Toggle + Smooth Scroll -->
+    <!-- ============================================ -->
+    <script>
+        (function() {
+            // ---- ELEMENTS ----
+            const toggleBtn = document.getElementById('langToggle');
+            const label = document.getElementById('langLabel');
+
+            // ---- STATE ----
+            let currentLang = localStorage.getItem('calcetinesLang') || 'es'; // 'es' or 'en'
+
+            // ---- FUNCTION: update all translatable elements ----
+            function setLanguage(lang) {
+                currentLang = lang;
+                localStorage.setItem('calcetinesLang', lang);
+
+                // Update toggle button appearance
+                if (lang === 'en') {
+                    toggleBtn.classList.add('en');
+                    label.textContent = '🇬🇧 EN';
+                } else {
+                    toggleBtn.classList.remove('en');
+                    label.textContent = '🇪🇸 ES';
+                }
+
+                // Find all elements with data-es and data-en
+                const elements = document.querySelectorAll('[data-es][data-en]');
+                elements.forEach(el => {
+                    const text = el.getAttribute('data-' + lang);
+                    if (text) {
+                        // If it contains HTML, set innerHTML; otherwise textContent
+                        if (text.includes('<')) {
+                            el.innerHTML = text;
+                        } else {
+                            el.textContent = text;
+                        }
+                    }
+                });
+
+                // Update the HTML lang attribute
+                document.documentElement.lang = (lang === 'en') ? 'en-US' : 'es-MX';
+
+                // Special case: update the hero h1 (has a <span> inside, so handle separately)
+                const heroH1 = document.querySelector('.hero-content h1');
+                if (heroH1) {
+                    // The <span> stays, but we don't translate the brand name
+                    // It's fine as-is.
+                }
+            }
+
+            // ---- TOGGLE EVENT ----
+            toggleBtn.addEventListener('click', function() {
+                const nextLang = (currentLang === 'es') ? 'en' : 'es';
+                setLanguage(nextLang);
+            });
+
+            // ---- INITIAL LOAD ----
+            setLanguage(currentLang);
+
+            // ---- SMOOTH SCROLL (unchanged) ----
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === "#") return;
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+        })();
+    </script>
+</body>
+</html>
