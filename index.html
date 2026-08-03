@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6Y5YYVQTT"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-M6Y5YYVQTT');
+	</script>
     <!-- ============================================ -->
     <!-- META TAGS & SEO                             -->
     <!-- ============================================ -->
@@ -637,43 +646,8 @@
                Inspirados en la selección mexicana y la pasión del futbol. Estos son algunos de nuestros modelos más recientes. <br>¿Tienes una idea? ¡Nosotros la hacemos realidad!
             </p>
 
-            <div class="gallery-grid">
-                <!-- Design 1: mexico_socks_1.jpg -->
-                <div class="gallery-item">
-                    <img src="mexico_socks_1.jpg" alt="Clásico Tricolor - Edición Mundial 2026" loading="lazy">
-                    <div class="caption">
-                        Clásico Tricolor
-                        <small data-es="Edición Mundial 2026" data-en="World Cup 2026 Edition">Edición Mundial 2026</small>
-                    </div>
-                </div>
-
-                <!-- Design 2: OIG41.jpg -->
-                <div class="gallery-item">
-                    <img src="OIG41.jpg" alt="Estilo Azteca Moderno - Patrones geométricos" loading="lazy">
-                    <div class="caption">
-                        Estilo Azteca Moderno
-                        <small data-es="Patrones geométricos" data-en="Geometric patterns">Patrones geométricos</small>
-                    </div>
-                </div>
-
-                <!-- Design 3: OIG4.jpg -->
-                <div class="gallery-item">
-                    <img src="OIG4.jpg" alt="Deportivo Elite - Alta compresión" loading="lazy">
-                    <div class="caption">
-                        Deportivo Elite
-                        <small data-es="Alta compresión" data-en="High compression">Alta compresión</small>
-                    </div>
-                </div>
-
-                <!-- Design 4: SomosMexico.jpg -->
-                <div class="gallery-item">
-                    <img src="SomosMexico.jpg" alt="Somos Mexico - Orgullo nacional" loading="lazy">
-                    <div class="caption">
-                        Somos Mexico
-                        <small data-es="Orgullo nacional" data-en="National pride">Orgullo nacional</small>
-                    </div>
-                </div>
-            </div>
+            <!-- Gallery items will be inserted here by JavaScript -->
+            <div class="gallery-grid" id="designGallery"></div>
 
             <div style="text-align:center; margin-top:35px;">
                 <a href="#contacto" class="btn" data-es="¿Quieres tu propio diseño? →" data-en="Want your own design? →">¿Quieres tu propio diseño? →</a>
@@ -764,6 +738,84 @@
     </footer>
 
     <!-- ============================================ -->
+    <!-- JAVASCRIPT                                  -->
+    <!-- ============================================ -->
+    <script>
+        // ============================================
+        // DESIGN GALLERY - Add new designs here!
+        // ============================================
+        const sockDesigns = [
+            {
+                image: "mexico_socks_1.jpg",
+                title: "Clásico Tricolor",
+                subtitle_es: "Edición Mundial 2026",
+                subtitle_en: "World Cup 2026 Edition"
+            },
+            {
+                image: "OIG41.jpg",
+                title: "Estilo Azteca Moderno",
+                subtitle_es: "Patrones geométricos",
+                subtitle_en: "Geometric patterns"
+            },
+            {
+                image: "OIG4.jpg",
+                title: "Deportivo Elite",
+                subtitle_es: "Alta compresión",
+                subtitle_en: "High compression"
+            },
+            {
+                image: "SomosMexico.jpg",
+                title: "Somos Mexico",
+                subtitle_es: "Orgullo nacional",
+                subtitle_en: "National pride"
+            }
+            // 👇 TO ADD A NEW DESIGN, COPY THE BLOCK BELOW AND PASTE IT ABOVE THIS LINE
+            // {
+            //     image: "nuevo_diseno.jpg",
+            //     title: "Nombre del Diseño",
+            //     subtitle_es: "Descripción en español",
+            //     subtitle_en: "Description in English"
+            // }
+        ];
+
+        // ============================================
+        // RENDER THE GALLERY
+        // ============================================
+        function renderGallery() {
+            const gallery = document.getElementById('designGallery');
+            if (!gallery) return;
+
+            // Clear existing content
+            gallery.innerHTML = '';
+
+            // Get current language
+            const lang = localStorage.getItem('calcetinesLang') || 'es';
+
+            // Loop through designs and create HTML
+            sockDesigns.forEach(design => {
+                const subtitle = lang === 'es' ? design.subtitle_es : design.subtitle_en;
+                
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.innerHTML = `
+                    <img src="${design.image}" alt="${design.title}" loading="lazy">
+                    <div class="caption">
+                        ${design.title}
+                        <small>${subtitle}</small>
+                    </div>
+                `;
+                gallery.appendChild(item);
+            });
+        }
+
+        // Call the function when page loads
+        renderGallery();
+
+        // Re-render when language changes
+        document.addEventListener('languageChanged', renderGallery);
+    </script>
+
+    <!-- ============================================ -->
     <!-- JAVASCRIPT: Language Toggle + Smooth Scroll -->
     <!-- ============================================ -->
     <script>
@@ -801,6 +853,10 @@
                 });
 
                 document.documentElement.lang = (lang === 'en') ? 'en-US' : 'es-MX';
+
+                // Trigger gallery re-render
+                const event = new CustomEvent('languageChanged');
+                document.dispatchEvent(event);
             }
 
             // ---- TOGGLE EVENT ----
