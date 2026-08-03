@@ -331,9 +331,25 @@
         /* ---------- GALERÍA ---------- */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 25px;
             margin-top: 20px;
+        }
+
+        /* Small designs: 4 per row */
+        .gallery-grid.small {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        /* Large designs: 2 per row (50% larger) */
+        .gallery-grid.large {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-grid.large .gallery-item img {
+            height: 300px;
         }
 
         .gallery-item {
@@ -457,6 +473,21 @@
             transform: scale(1.03);
         }
 
+        /* ---------- SECTION DIVIDER ---------- */
+        .section-divider {
+            text-align: center;
+            margin: 20px 0 10px 0;
+            font-size: 1.1rem;
+            color: #6b5f53;
+            letter-spacing: 2px;
+        }
+
+        .section-divider span {
+            background: #f0ede8;
+            padding: 0 20px;
+            display: inline-block;
+        }
+
         /* ---------- FOOTER ---------- */
         footer {
             background: #1a1a1a;
@@ -532,6 +563,19 @@
             .lang-toggle.en::after {
                 transform: translateX(22px);
             }
+
+            .gallery-grid.small {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid.large {
+                grid-template-columns: 1fr 1fr;
+                max-width: 100%;
+            }
+
+            .gallery-grid.large .gallery-item img {
+                height: 220px;
+            }
         }
 
         @media (max-width: 500px) {
@@ -554,8 +598,16 @@
                 font-size: 0.95rem;
             }
 
-            .gallery-grid {
+            .gallery-grid.small {
                 grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery-grid.large {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid.large .gallery-item img {
+                height: 250px;
             }
 
             .contact-grid {
@@ -594,7 +646,7 @@
     </header>
 
     <!-- ============================================ -->
-    <!-- NOSOTROS / ABOUT US (UPDATED WITH FACTORY PHOTO) -->
+    <!-- NOSOTROS / ABOUT US                         -->
     <!-- ============================================ -->
     <section id="nosotros" class="bg-light">
         <div class="container">
@@ -636,27 +688,49 @@
     </section>
 
     <!-- ============================================ -->
-    <!-- GALERÍA DE DISEÑOS / DESIGNS GALLERY        -->
+    <!-- GALERÍA DE DISEÑOS                          -->
     <!-- ============================================ -->
     <section id="disenos" class="bg-soft">
         <div class="container">
             <h2 class="section-title"><span data-es="Diseños" data-en="Designs">Diseños</span> <span>Mundial 2026</span></h2>
-            <p class="section-sub" data-es="Inspirados en la selección mexicana y la pasión del futbol. Estos son algunos de nuestros modelos más recientes. <br>¿Tienes una idea? ¡Nosotros la hacemos realidad!"
-               data-en="Inspired by the Mexican national team and the passion for soccer. These are some of our latest models. <br>Have an idea? We'll make it happen!">
-               Inspirados en la selección mexicana y la pasión del futbol. Estos son algunos de nuestros modelos más recientes. <br>¿Tienes una idea? ¡Nosotros la hacemos realidad!
+            <p class="section-sub" data-es="Inspirados en la selección mexicana y la pasión del futbol." data-en="Inspired by the Mexican national team and the passion for soccer.">
+                Inspirados en la selección mexicana y la pasión del futbol.
             </p>
 
-            <!-- Gallery items will be inserted here by JavaScript -->
-            <div class="gallery-grid" id="designGallery"></div>
+            <!-- Small Gallery: 4 per row -->
+            <div class="gallery-grid small" id="designGallerySmall">
+                <!-- Inserted by JavaScript -->
+            </div>
 
-            <div style="text-align:center; margin-top:35px;">
+            <!-- Divider -->
+            <div class="section-divider">
+                <span>✦ ✦ ✦</span>
+            </div>
+
+            <!-- New Section: Nuevos Diseños -->
+            <h2 class="section-title" style="margin-top:40px;">
+                <span data-es="Nuevos Diseños" data-en="New Designs">Nuevos Diseños</span>
+                <span style="font-size:1.2rem; display:block; color:#6b5f53; font-weight:400;">
+                    <span data-es="Que ustedes gusten" data-en="Custom designs you'll love">Que ustedes gusten</span>
+                </span>
+            </h2>
+            <p class="section-sub" data-es="Diseños creativos y originales para todos los estilos." data-en="Creative and original designs for all styles.">
+                Diseños creativos y originales para todos los estilos.
+            </p>
+
+            <!-- Large Gallery: 2 per row (50% larger) -->
+            <div class="gallery-grid large" id="designGalleryLarge">
+                <!-- Inserted by JavaScript -->
+            </div>
+
+            <div style="text-align:center; margin-top:40px;">
                 <a href="#contacto" class="btn" data-es="¿Quieres tu propio diseño? →" data-en="Want your own design? →">¿Quieres tu propio diseño? →</a>
             </div>
         </div>
     </section>
 
     <!-- ============================================ -->
-    <!-- PROCESO DE PRODUCCIÓN / PRODUCTION PROCESS   -->
+    <!-- PROCESO DE PRODUCCIÓN                       -->
     <!-- ============================================ -->
     <section id="proceso" class="bg-light">
         <div class="container">
@@ -672,7 +746,7 @@
     </section>
 
     <!-- ============================================ -->
-    <!-- CONTACTO / CONTACT                          -->
+    <!-- CONTACTO                                    -->
     <!-- ============================================ -->
     <section id="contacto" class="bg-soft">
         <div class="container">
@@ -744,7 +818,7 @@
         // ============================================
         // DESIGN GALLERY - Add new designs here!
         // ============================================
-        const sockDesigns = [
+        const worldCupDesigns = [
             {
                 image: "mexico_socks_1.jpg",
                 title: "Clásico Tricolor",
@@ -769,50 +843,76 @@
                 subtitle_es: "Orgullo nacional",
                 subtitle_en: "National pride"
             }
-            // 👇 TO ADD A NEW DESIGN, COPY THE BLOCK BELOW AND PASTE IT ABOVE THIS LINE
-            // {
-            //     image: "nuevo_diseno.jpg",
-            //     title: "Nombre del Diseño",
-            //     subtitle_es: "Descripción en español",
-            //     subtitle_en: "Description in English"
-            // }
+        ];
+
+        const newDesigns = [
+            {
+                image: "animal_print.jpg",
+                title: "Animal Print",
+                subtitle_es: "Estilo salvaje y moderno",
+                subtitle_en: "Wild and modern style"
+            },
+            {
+                image: "boy.png",
+                title: "Boy Collection",
+                subtitle_es: "Diseño juvenil y fresco",
+                subtitle_en: "Youthful and fresh design"
+            },
+            {
+                image: "men.png",
+                title: "Men Classic",
+                subtitle_es: "Estilo clásico para caballero",
+                subtitle_en: "Classic gentleman style"
+            },
+            {
+                image: "men_creative.png",
+                title: "Men Creative",
+                subtitle_es: "Diseño creativo y original",
+                subtitle_en: "Creative and original design"
+            }
         ];
 
         // ============================================
-        // RENDER THE GALLERY
+        // RENDER GALLERIES
         // ============================================
-        function renderGallery() {
-            const gallery = document.getElementById('designGallery');
-            if (!gallery) return;
+        function renderGalleries() {
+            const gallerySmall = document.getElementById('designGallerySmall');
+            const galleryLarge = document.getElementById('designGalleryLarge');
 
-            // Clear existing content
-            gallery.innerHTML = '';
-
-            // Get current language
             const lang = localStorage.getItem('calcetinesLang') || 'es';
 
-            // Loop through designs and create HTML
-            sockDesigns.forEach(design => {
-                const subtitle = lang === 'es' ? design.subtitle_es : design.subtitle_en;
-                
-                const item = document.createElement('div');
-                item.className = 'gallery-item';
-                item.innerHTML = `
-                    <img src="${design.image}" alt="${design.title}" loading="lazy">
-                    <div class="caption">
-                        ${design.title}
-                        <small>${subtitle}</small>
-                    </div>
-                `;
-                gallery.appendChild(item);
-            });
+            // Helper function to create gallery HTML
+            function createGalleryHTML(designs, lang) {
+                return designs.map(design => {
+                    const subtitle = lang === 'es' ? design.subtitle_es : design.subtitle_en;
+                    return `
+                        <div class="gallery-item">
+                            <img src="${design.image}" alt="${design.title}" loading="lazy">
+                            <div class="caption">
+                                ${design.title}
+                                <small>${subtitle}</small>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            // Render small gallery (World Cup designs)
+            if (gallerySmall) {
+                gallerySmall.innerHTML = createGalleryHTML(worldCupDesigns, lang);
+            }
+
+            // Render large gallery (New designs)
+            if (galleryLarge) {
+                galleryLarge.innerHTML = createGalleryHTML(newDesigns, lang);
+            }
         }
 
-        // Call the function when page loads
-        renderGallery();
+        // Call when page loads
+        renderGalleries();
 
         // Re-render when language changes
-        document.addEventListener('languageChanged', renderGallery);
+        document.addEventListener('languageChanged', renderGalleries);
     </script>
 
     <!-- ============================================ -->
