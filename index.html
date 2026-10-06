@@ -6,28 +6,26 @@
     <!-- ============================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcetines México | Fábrica de Calcetines Personalizados Y Personalizables con Tecnologia Revolucionaria Anti-Microbial</title>
-    <meta name="description" content="Fábrica de calcetines en Puebla, México. Producción personalizada para marcas, equipos y eventos: colecciones para hombre, calcetines antibacteriales con nanopartículas de plata y bambú, y diseños del Mundial 2026. Envíos nacionales e internacionales.">
-    <meta name="keywords" content="calcetines personalizados, fábrica de calcetines, calcetines México, calcetines para hombre, calcetines de fraternidad, calcetines tenis, calcetines antibacteriales, calcetines de bambú, nanopartículas de plata, calcetines coolmax, producción de calcetines, calcetines Mundial 2026, calcetines deportivos, Puebla">
+    <title>Calcetines México | Fábrica de Calcetines Personalizados en Puebla</title>
+    <meta name="description" content="Fábrica de calcetines en Puebla, México. Producción personalizada para marcas, equipos y eventos. Cotiza en línea. Envíos nacionales e internacionales.">
+    <meta name="keywords" content="calcetines personalizados, fábrica de calcetines, calcetines México, producción de calcetines, cotización de calcetines personalizados, calcetines deportivos, Puebla">
     <meta name="author" content="Calcetines México">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://calcetinesmexico.com/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Calcetines México | Fábrica de Calcetines Personalizados">
-    <meta property="og:description" content="Producción de calcetines a medida para marcas, equipos y eventos: colecciones para hombre y línea Especialidada antibacterial con plata y bambú. Diseños exclusivos para el Mundial 2026.">
+    <meta property="og:description" content="Producción de calcetines a medida para marcas, equipos y eventos. Solicita tu cotización en línea.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://calcetinesmexico.com/">
     <meta property="og:locale" content="es_MX">
-    <meta property="og:locale:alternate" content="en_US">
     <meta property="og:image" content="https://calcetinesmexico.com/mexico_socks_1.jpg">
-    <meta property="og:image:alt" content="Calcetines personalizados Calcetines México">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Calcetines México | Fábrica de Calcetines Personalizados">
-    <meta name="twitter:description" content="Producción de calcetines a medida para marcas, equipos y eventos: colecciones para hombre y línea Especialidada antibacterial con plata y bambú.">
     <meta name="twitter:image" content="https://calcetinesmexico.com/mexico_socks_1.jpg">
+    <meta name="twitter:title" content="Calcetines México | Fábrica de Calcetines Personalizados">
+    <meta name="twitter:description" content="Producción de calcetines a medida para marcas, equipos y eventos. Solicita tu cotización en línea.">
 
     <!-- ============================================ -->
     <!-- GOOGLE TAG (gtag.js)                        -->
@@ -36,6 +34,15 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      // Privacidad: en Europa (EEE, Reino Unido, Suiza) las analíticas quedan desactivadas por defecto.
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'],
+        wait_for_update: 500
+      });
       gtag('js', new Date());
       gtag('config', 'G-M6Y5YYVQTT');
     </script>
@@ -46,10 +53,10 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Calcetines México",
-        "description": "Fábrica de calcetines personalizados en Puebla, México. Colecciones para hombre y línea Especialidada antibacterial con nanopartículas de plata y bambú. Producción nacional e internacional.",
-        "image": "https://calcetinesmexico.com/mexico_socks_1.jpg",
+        "description": "Fábrica de calcetines personalizados en Puebla, México. Producción nacional e internacional.",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "2920 Sauces, Las Animas",
             "addressLocality": "Puebla",
             "addressRegion": "Puebla",
             "addressCountry": "MX"
@@ -160,7 +167,8 @@
         /* ---------- HERO BANNER ---------- */
         .hero {
             position: relative;
-            background: url('sock_machines.jpg') center center / cover no-repeat;
+            background: linear-gradient(135deg, #006341 0%, #006341 33%, #ffffff 33%, #ffffff 66%, #ce1126 66%, #ce1126 100%);
+            background-size: 100% 100%;
             min-height: 65vh;
             display: flex;
             align-items: center;
@@ -174,25 +182,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.60);
+            background-color: rgba(255, 255, 255, 0.50);
             z-index: 1;
         }
-
-        /* Thin tricolor accent strip under the hero - keeps a nod to the
-           Mexican flag branding now that the hero uses a photo background */
-        .flag-strip {
-            display: flex;
-            height: 6px;
-            width: 100%;
-        }
-
-        .flag-strip span {
-            flex: 1;
-        }
-
-        .flag-strip span:nth-child(1) { background: #006341; }
-        .flag-strip span:nth-child(2) { background: #ffffff; }
-        .flag-strip span:nth-child(3) { background: #ce1126; }
 
         .hero-content {
             position: relative;
@@ -374,45 +366,6 @@
             height: 300px;
         }
 
-        /* Specialty gallery: 3 per row */
-        .gallery-grid.triple {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        .specialty-intro {
-            background: #fff;
-            border: 1px solid #e6e0d8;
-            border-radius: 18px;
-            padding: 22px 28px;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            text-align: center;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-        }
-
-        .specialty-intro p {
-            font-size: 1.05rem;
-            color: #2d2d2d;
-        }
-
-        .specialty-badges {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 14px;
-        }
-
-        .specialty-badges span {
-            background: #f0ede8;
-            border: 1px solid #ddd6cd;
-            border-radius: 30px;
-            padding: 6px 16px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #006341;
-        }
-
         .gallery-item {
             background: #fff;
             border-radius: 18px;
@@ -534,83 +487,6 @@
             transform: scale(1.03);
         }
 
-        /* ---------- INQUIRY / QUESTIONNAIRE FORM ---------- */
-        .inquiry-form {
-            max-width: 620px;
-            margin: 0 auto;
-            background: #fff;
-            border-radius: 20px;
-            padding: 36px 32px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.07);
-            border: 1px solid #ece6de;
-        }
-
-        .inquiry-form label {
-            display: block;
-            font-weight: 600;
-            font-size: 0.92rem;
-            margin-bottom: 6px;
-            color: #1e1e1e;
-        }
-
-        .inquiry-form .form-row {
-            margin-bottom: 18px;
-        }
-
-        .inquiry-form .form-row-double {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-        }
-
-        .inquiry-form input,
-        .inquiry-form select,
-        .inquiry-form textarea {
-            width: 100%;
-            padding: 12px 14px;
-            border: 1px solid #ddd6cd;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-family: inherit;
-            background: #faf8f5;
-            color: #1e1e1e;
-        }
-
-        .inquiry-form input:focus,
-        .inquiry-form select:focus,
-        .inquiry-form textarea:focus {
-            outline: none;
-            border-color: #ce1126;
-        }
-
-        .inquiry-form textarea {
-            resize: vertical;
-            min-height: 110px;
-        }
-
-        .inquiry-form button {
-            width: 100%;
-            border: none;
-            cursor: pointer;
-            font-family: inherit;
-        }
-
-        .inquiry-form .form-note {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #6b5f53;
-            margin-top: 14px;
-        }
-
-        @media (max-width: 600px) {
-            .inquiry-form {
-                padding: 26px 20px;
-            }
-            .inquiry-form .form-row-double {
-                grid-template-columns: 1fr;
-            }
-        }
-
         /* ---------- SECTION DIVIDER ---------- */
         .section-divider {
             text-align: center;
@@ -650,6 +526,180 @@
             justify-content: center;
             gap: 28px;
             flex-wrap: wrap;
+        }
+
+        /* ---------- COTIZACIÓN (FORMULARIO) ---------- */
+        .quote-form {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #faf8f5;
+            border: 1px solid #e6e0d8;
+            border-radius: 22px;
+            padding: 34px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+
+        .quote-form .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 20px;
+        }
+
+        .quote-form .field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .quote-form label.lbl,
+        .quote-form legend {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #1e1e1e;
+        }
+
+        .quote-form .req {
+            color: #ce1126;
+        }
+
+        .quote-form input[type="text"],
+        .quote-form input[type="tel"],
+        .quote-form input[type="email"],
+        .quote-form input[type="url"],
+        .quote-form input[type="file"],
+        .quote-form textarea {
+            font: inherit;
+            padding: 12px 14px;
+            border: 1.5px solid #d9d1c6;
+            border-radius: 12px;
+            background: #fff;
+            color: #1e1e1e;
+            width: 100%;
+        }
+
+        .quote-form textarea {
+            resize: vertical;
+            min-height: 84px;
+        }
+
+        .quote-form input:focus-visible,
+        .quote-form textarea:focus-visible {
+            outline: 3px solid rgba(206, 17, 38, 0.25);
+            border-color: #ce1126;
+        }
+
+        .quote-form fieldset {
+            border: none;
+            border-top: 1px solid #e0dcd6;
+            margin-top: 26px;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .quote-form legend {
+            font-size: 1.1rem;
+            padding-right: 10px;
+        }
+
+        .quote-form .hint {
+            font-size: 0.9rem;
+            color: #6b5f53;
+        }
+
+        .quote-form .hint-strong {
+            font-size: 0.95rem;
+            background: #fff6e0;
+            border: 1px solid #f0dca8;
+            border-radius: 10px;
+            padding: 10px 14px;
+            color: #4a3d1f;
+        }
+
+        .quote-form .choices {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .quote-form .choice {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 16px;
+            border: 1.5px solid #d9d1c6;
+            border-radius: 50px;
+            background: #fff;
+            cursor: pointer;
+            font-size: 0.97rem;
+        }
+
+        .quote-form .choice:has(input:checked) {
+            border-color: #ce1126;
+            background: #fdeced;
+        }
+
+        .quote-form .choice input {
+            accent-color: #ce1126;
+            width: 17px;
+            height: 17px;
+        }
+
+        .quote-form .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 28px;
+            align-items: center;
+        }
+
+        .quote-form .actions button {
+            font: inherit;
+            cursor: pointer;
+        }
+
+        .quote-form .btn-whatsapp {
+            margin-top: 0;
+            padding: 14px 32px;
+        }
+
+        .quote-form .btn-secondary {
+            background: transparent;
+            color: #1a1a1a;
+            border: 2px solid #1a1a1a;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-weight: 700;
+            font-size: 1.02rem;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .quote-form .btn-secondary:hover {
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        .quote-form .status {
+            margin-top: 16px;
+            font-weight: 600;
+            min-height: 1.4em;
+        }
+
+        .quote-form .status.err { color: #ce1126; }
+        .quote-form .status.ok { color: #006341; }
+
+        .quote-form .hp {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 700px) {
+            .quote-form { padding: 22px 16px; }
+            .quote-form .row { grid-template-columns: 1fr; }
         }
 
         /* ---------- RESPONSIVE ---------- */
@@ -714,10 +764,6 @@
             .gallery-grid.large .gallery-item img {
                 height: 220px;
             }
-
-            .gallery-grid.triple {
-                grid-template-columns: 1fr 1fr;
-            }
         }
 
         @media (max-width: 500px) {
@@ -752,10 +798,6 @@
                 height: 250px;
             }
 
-            .gallery-grid.triple {
-                grid-template-columns: 1fr;
-            }
-
             .contact-grid {
                 grid-template-columns: 1fr;
             }
@@ -786,11 +828,10 @@
             </p>
             <div>
                 <a href="#disenos" class="btn" data-es="Ver diseños" data-en="View designs">Ver diseños</a>
-                <a href="#contacto" class="btn btn-outline" data-es="Solicitar cotización" data-en="Request a quote">Solicitar cotización</a>
+                <a href="#cotizacion" class="btn btn-outline" data-es="Solicitar cotización" data-en="Request a quote">Solicitar cotización</a>
             </div>
         </div>
     </header>
-    <div class="flag-strip"><span></span><span></span><span></span></div>
 
     <!-- ============================================ -->
     <!-- NOSOTROS / ABOUT US                         -->
@@ -828,7 +869,7 @@
                     </ul>
                 </div>
                 <div class="image-block">
-                    <img src="embroidery_machines.jpeg" alt="Máquinas de bordado industrial en la fábrica de Calcetines México" loading="lazy">
+                    <img src="sock_machines.jpg" alt="Maquinaria de producción de calcetines en Calcetines México" loading="lazy">
                 </div>
             </div>
         </div>
@@ -839,7 +880,28 @@
     <!-- ============================================ -->
     <section id="disenos" class="bg-soft">
         <div class="container">
-            <h2 class="section-title"><span data-es="Nuestros" data-en="Our">Nuestros</span> <span>Diseños</span></h2>
+            <h2 class="section-title" data-es="Colección <span>México</span>" data-en="<span>Mexico</span> Collection">Colección <span>México</span></h2>
+            <p class="section-sub" data-es="Inspirados en nuestros colores, nuestra cultura y el orgullo de ser mexicanos." data-en="Inspired by our colors, our culture, and the pride of being Mexican.">
+                Inspirados en nuestros colores, nuestra cultura y el orgullo de ser mexicanos.
+            </p>
+
+            <!-- Small Gallery: 4 per row -->
+            <div class="gallery-grid small" id="designGallerySmall">
+                <!-- Inserted by JavaScript -->
+            </div>
+
+            <!-- Divider -->
+            <div class="section-divider">
+                <span>✦ ✦ ✦</span>
+            </div>
+
+            <!-- New Section: Nuevos Diseños -->
+            <h2 class="section-title" style="margin-top:40px;">
+                <span data-es="Nuevos diseños" data-en="New Designs">Nuevos diseños</span>
+                <span style="font-size:1.2rem; display:block; color:#6b5f53; font-weight:400;">
+                    <span data-es="Diseños a tu gusto" data-en="Custom designs you'll love">Diseños a tu gusto</span>
+                </span>
+            </h2>
             <p class="section-sub" data-es="Diseños creativos y originales para todos los estilos." data-en="Creative and original designs for all styles.">
                 Diseños creativos y originales para todos los estilos.
             </p>
@@ -851,63 +913,8 @@
 
             <!-- Catalog Button -->
             <div style="text-align:center; margin-top:40px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
-                <a href="#contacto" class="btn" data-es="¿Quieres tu propio diseño? →" data-en="Want your own design? →">¿Quieres tu propio diseño? →</a>
+                <a href="#cotizacion" class="btn" data-es="¿Quieres tu propio diseño? →" data-en="Want your own design? →">¿Quieres tu propio diseño? →</a>
                 <a href="catalogo_disenos.pdf" target="_blank" class="btn" style="background-color: #006341; border-color: #006341;" data-es="📄 Ver más diseños" data-en="📄 View More Designs">📄 Ver más diseños</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- HOMBRES / MEN'S COLLECTION                  -->
-    <!-- ============================================ -->
-    <section id="hombres" class="bg-light">
-        <div class="container">
-            <h2 class="section-title"><span data-es="Colección" data-en="Collection">Colección</span> <span data-es="Hombres" data-en="Men's">Hombres</span></h2>
-            <p class="section-sub" data-es="Calcetines de fraternidad, cortos y de tenis pensados para el día a día del caballero mexicano."
-               data-en="Fraternity, ankle, and tennis socks designed for everyday wear.">
-                Calcetines de fraternidad, cortos y de tenis pensados para el día a día del caballero mexicano.
-            </p>
-
-            <div class="gallery-grid small" id="designGalleryMen">
-                <!-- Inserted by JavaScript -->
-            </div>
-
-            <div style="text-align:center; margin-top:40px;">
-                <a href="#contacto" class="btn" data-es="Cotiza la colección Hombres →" data-en="Request a quote for Men's →">Cotiza la colección Hombres →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!-- ESPECIALIDADA / SPECIALTY COLLECTION         -->
-    <!-- ============================================ -->
-    <section id="especialidada" class="bg-soft">
-        <div class="container">
-            <h2 class="section-title"><span data-es="Línea" data-en="Specialty">Línea</span> <span data-es="Especialidaad" data-en="Line">Especialidada</span></h2>
-            <p class="section-sub" data-es="Tecnología textil avanzada para máxima frescura y comodidad."
-               data-en="Advanced textile technology for maximum freshness and comfort.">
-                Tecnología textil avanzada para máxima frescura y comodidad.
-            </p>
-
-            <div class="specialty-intro">
-                <p data-es="Nuestra línea Especialidada es fabricada con <strong>material antibacterial</strong> que incorpora <strong>nanopartículas de plata</strong> y <strong>fibra de bambú</strong>, ofreciendo calcetines que controlan olores, absorben la humedad y mantienen los pies frescos y secos durante todo el día."
-                   data-en="Our Specialty line is made with <strong>antibacterial material</strong> that incorporates <strong>silver nanoparticles</strong> and <strong>bamboo fiber</strong>, offering socks that control odor, wick away moisture, and keep feet fresh and dry all day.">
-                   Nuestra línea Especialidada es fabricada con <strong>material antibacterial</strong> que incorpora <strong>nanopartículas de plata</strong> y <strong>fibra de bambú</strong>, ofreciendo calcetines que controlan olores, absorben la humedad y mantienen los pies frescos y secos durante todo el día.
-                </p>
-                <div class="specialty-badges">
-                    <span data-es="🥈 Nanopartículas de plata" data-en="🥈 Silver nanoparticles">🥈 Nanopartículas de plata</span>
-                    <span data-es="🎋 Fibra de bambú" data-en="🎋 Bamboo fiber">🎋 Fibra de bambú</span>
-                    <span data-es="🦠 Antibacterial" data-en="🦠 Antibacterial">🦠 Antibacterial</span>
-                    <span data-es="💧 Control de humedad Coolmax" data-en="💧 Coolmax moisture control">💧 Control de humedad Coolmax</span>
-                </div>
-            </div>
-
-            <div class="gallery-grid triple" id="designGallerySpecialty">
-                <!-- Inserted by JavaScript -->
-            </div>
-
-            <div style="text-align:center; margin-top:40px;">
-                <a href="#contacto" class="btn" style="background-color: #006341; border-color: #006341;" data-es="Cotiza la línea Especialidada →" data-en="Request a quote for Specialty →">Cotiza la línea Especialidada →</a>
             </div>
         </div>
     </section>
@@ -929,23 +936,133 @@
     </section>
 
     <!-- ============================================ -->
-    <!-- ARCHIVO: DISEÑOS MUNDIAL 2026                -->
-    <!-- Kept lower on the page for credibility/       -->
-    <!-- portfolio purposes now that the event has     -->
-    <!-- passed.                                       -->
+    <!-- COTIZACIÓN                                  -->
     <!-- ============================================ -->
-    <section id="mundial2026" class="bg-soft">
+    <section id="cotizacion" class="bg-light">
         <div class="container">
-            <h2 class="section-title"><span data-es="Diseños" data-en="Designs">Diseños</span> <span>Mundial 2026</span></h2>
-            <p class="section-sub" data-es="Nuestra colección conmemorativa para la Copa Mundial 2026, inspirada en la selección mexicana y la pasión por el fútbol."
-               data-en="Our commemorative collection for the 2026 World Cup, inspired by the Mexican national team and the passion for soccer.">
-                Nuestra colección conmemorativa para la Copa Mundial 2026, inspirada en la selección mexicana y la pasión por el fútbol.
+            <h2 class="section-title" data-es="Cotiza tus <span>calcetines personalizados</span>" data-en="Quote your <span>custom socks</span>">Cotiza tus <span>calcetines personalizados</span></h2>
+            <p class="section-sub" data-es="Para cotización de calcetines personalizados necesitamos esta información:" data-en="To quote custom socks we need the following information:">
+                Para cotización de calcetines personalizados necesitamos esta información:
             </p>
 
-            <!-- Small Gallery: 4 per row -->
-            <div class="gallery-grid small" id="designGallerySmall">
-                <!-- Inserted by JavaScript -->
-            </div>
+            <form id="quoteForm" class="quote-form" autocomplete="on">
+                <!-- Anti-spam (los humanos no lo ven) -->
+                <div class="hp" aria-hidden="true">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off">
+                </div>
+
+                <!-- Datos de contacto -->
+                <div class="row">
+                    <div class="field">
+                        <label class="lbl" for="q_nombre"><span data-es="Nombre" data-en="Name">Nombre</span> <span class="req">*</span></label>
+                        <input type="text" id="q_nombre" name="nombre" required autocomplete="name">
+                    </div>
+                    <div class="field">
+                        <label class="lbl" for="q_empresa"><span data-es="Empresa o marca" data-en="Company or brand">Empresa o marca</span></label>
+                        <input type="text" id="q_empresa" name="empresa" autocomplete="organization">
+                    </div>
+                    <div class="field">
+                        <label class="lbl" for="q_tel"><span data-es="WhatsApp o teléfono" data-en="WhatsApp or phone">WhatsApp o teléfono</span> <span class="req">*</span></label>
+                        <input type="tel" id="q_tel" name="telefono" required autocomplete="tel">
+                    </div>
+                    <div class="field">
+                        <label class="lbl" for="q_email"><span data-es="Correo electrónico" data-en="Email">Correo electrónico</span></label>
+                        <input type="email" id="q_email" name="correo" autocomplete="email">
+                    </div>
+                </div>
+
+                <!-- 1. Volumen -->
+                <fieldset>
+                    <legend><span data-es="1. Volumen" data-en="1. Volume">1. Volumen</span> <span class="req">*</span></legend>
+                    <label class="lbl" for="q_volumen" data-es="¿Cuántos pares de cada color base?" data-en="How many pairs of each base color?">¿Cuántos pares de cada color base?</label>
+                    <textarea id="q_volumen" name="volumen" required
+                        data-ph-es="Ej. 500 pares negro, 300 pares blanco, 200 pares azul marino"
+                        data-ph-en="E.g. 500 pairs black, 300 pairs white, 200 pairs navy"
+                        placeholder="Ej. 500 pares negro, 300 pares blanco, 200 pares azul marino"></textarea>
+                </fieldset>
+
+                <!-- 2. Composición -->
+                <fieldset>
+                    <legend><span data-es="2. Composición de material" data-en="2. Material composition">2. Composición de material</span></legend>
+                    <input type="text" id="q_material" name="material" aria-label="Composición de material"
+                        data-ph-es="Ej. 70% algodón peinado, 28% poliéster, 2% licra"
+                        data-ph-en="E.g. 70% combed cotton, 28% polyester, 2% lycra"
+                        placeholder="Ej. 70% algodón peinado, 28% poliéster, 2% licra">
+                    <div class="choices">
+                        <label class="choice"><input type="checkbox" name="material_nose" value="No estoy seguro, recomiéndenme una composición"><span data-es="No estoy seguro, recomiéndenme" data-en="Not sure, please recommend">No estoy seguro, recomiéndenme</span></label>
+                    </div>
+                </fieldset>
+
+                <!-- 3. Diseños o logos -->
+                <fieldset>
+                    <legend><span data-es="3. Diseños o logos" data-en="3. Designs or logos">3. Diseños o logos</span></legend>
+                    <textarea id="q_diseno" name="diseno" aria-label="Diseños o logos"
+                        data-ph-es="Describe tu diseño: colores, logo, bordado o tejido, ubicación en el calcetín…"
+                        data-ph-en="Describe your design: colors, logo, embroidery or knit, placement on the sock…"
+                        placeholder="Describe tu diseño: colores, logo, bordado o tejido, ubicación en el calcetín…"></textarea>
+                    <input type="url" id="q_enlace" name="enlace" aria-label="Enlace a logo o diseño"
+                        data-ph-es="Enlace a tu logo o diseño (Google Drive, Dropbox, etc.) — opcional"
+                        data-ph-en="Link to your logo or design (Google Drive, Dropbox, etc.) — optional"
+                        placeholder="Enlace a tu logo o diseño (Google Drive, Dropbox, etc.) — opcional">
+                    <div id="fileWrap" hidden>
+                        <input type="file" id="q_archivos" name="archivos" multiple accept="image/*,.pdf,.ai,.eps,.svg" aria-label="Archivos de logo o diseño">
+                    </div>
+                    <p class="hint-strong" data-es="📎 Por favor mándanos una muestra de tu diseño o logo. Después de enviar este formulario, compártela por WhatsApp o a info@CalcetinesMexico.com."
+                       data-en="📎 Please send us a sample of your design or logo. After submitting this form, share it by WhatsApp or at info@CalcetinesMexico.com.">
+                        📎 Por favor mándanos una muestra de tu diseño o logo. Después de enviar este formulario, compártela por WhatsApp o a info@CalcetinesMexico.com.
+                    </p>
+                </fieldset>
+
+                <!-- 4. Tamaño -->
+                <fieldset>
+                    <legend><span data-es="4. Tamaño" data-en="4. Size / style">4. Tamaño</span> <span class="req">*</span></legend>
+                    <span class="hint" data-es="¿Qué tamaño? Puedes elegir más de uno." data-en="Which size? You may choose more than one.">¿Qué tamaño? Puedes elegir más de uno.</span>
+                    <div class="choices">
+                        <label class="choice"><input type="checkbox" name="tamano" value="Futbolero"><span data-es="Futbolero" data-en="Soccer (knee-high)">Futbolero</span></label>
+                        <label class="choice"><input type="checkbox" name="tamano" value="Crew"><span>Crew</span></label>
+                        <label class="choice"><input type="checkbox" name="tamano" value="Tine"><span data-es="Tine" data-en="Ankle (tine)">Tine</span></label>
+                        <label class="choice"><input type="checkbox" name="tamano" value="Liner"><span>Liner</span></label>
+                    </div>
+                    <input type="text" id="q_tamano_otro" name="tamano_otro" aria-label="Otro tamaño"
+                        data-ph-es="Otro tamaño o tallas (ej. 25–27 cm, chico/mediano/grande)"
+                        data-ph-en="Other size or sizing (e.g. 25–27 cm, S/M/L)"
+                        placeholder="Otro tamaño o tallas (ej. 25–27 cm, chico/mediano/grande)">
+                </fieldset>
+
+                <!-- 5. Empaque -->
+                <fieldset>
+                    <legend><span data-es="5. Detalles de empaque" data-en="5. Packaging details">5. Detalles de empaque</span></legend>
+                    <span class="hint" data-es="¿Solo en bulto, o tú proporcionas parte o todo el empaque?" data-en="Bulk only, or do you provide part or all of the packaging?">¿Solo en bulto, o tú proporcionas parte o todo el empaque?</span>
+                    <div class="choices">
+                        <label class="choice"><input type="radio" name="empaque" value="Solo en bulto"><span data-es="Solo en bulto" data-en="Bulk only">Solo en bulto</span></label>
+                        <label class="choice"><input type="radio" name="empaque" value="Yo proveo todo el empaque"><span data-es="Yo proveo todo el empaque" data-en="I provide all the packaging">Yo proveo todo el empaque</span></label>
+                        <label class="choice"><input type="radio" name="empaque" value="Yo proveo parte del empaque"><span data-es="Yo proveo parte del empaque" data-en="I provide part of the packaging">Yo proveo parte del empaque</span></label>
+                        <label class="choice"><input type="radio" name="empaque" value="Necesito que lo incluyan en la cotización"><span data-es="Necesito que lo incluyan en la cotización" data-en="Please include it in the quote">Necesito que lo incluyan en la cotización</span></label>
+                    </div>
+                    <span class="hint" data-es="Tipo de empaque (si aplica):" data-en="Packaging type (if applicable):">Tipo de empaque (si aplica):</span>
+                    <div class="choices">
+                        <label class="choice"><input type="checkbox" name="empaque_tipo" value="Caballete"><span data-es="Caballete" data-en="Header card (caballete)">Caballete</span></label>
+                        <label class="choice"><input type="checkbox" name="empaque_tipo" value="Gancho"><span data-es="Gancho" data-en="Hanger / hook">Gancho</span></label>
+                        <label class="choice"><input type="checkbox" name="empaque_tipo" value="Fajilla"><span data-es="Fajilla" data-en="Sleeve / band (fajilla)">Fajilla</span></label>
+                        <label class="choice"><input type="checkbox" name="empaque_tipo" value="Otro"><span data-es="Otro" data-en="Other">Otro</span></label>
+                    </div>
+                </fieldset>
+
+                <!-- Comentarios -->
+                <fieldset>
+                    <legend><span data-es="Comentarios adicionales" data-en="Additional comments">Comentarios adicionales</span></legend>
+                    <textarea id="q_comentarios" name="comentarios" aria-label="Comentarios adicionales"
+                        data-ph-es="Fecha requerida, destino de envío, dudas…"
+                        data-ph-en="Required date, shipping destination, questions…"
+                        placeholder="Fecha requerida, destino de envío, dudas…"></textarea>
+                </fieldset>
+
+                <div class="actions">
+                    <button type="submit" class="btn-whatsapp" id="quoteSubmit">💬 <span id="quoteSubmitLabel" data-es="Enviar cotización por WhatsApp" data-en="Send quote request by WhatsApp">Enviar cotización por WhatsApp</span></button>
+                    <button type="button" class="btn-secondary" id="quoteMail">✉️ <span data-es="Enviar por correo" data-en="Send by email">Enviar por correo</span></button>
+                </div>
+                <p class="status" id="quoteStatus" role="status" aria-live="polite"></p>
+            </form>
         </div>
     </section>
 
@@ -965,11 +1082,9 @@
                 <div class="contact-card">
                     <div class="icon">📞</div>
                     <h3 data-es="Teléfono" data-en="Phone">Teléfono</h3>
-                    <p><a href="#" id="contactPhoneLink" rel="nofollow"><span id="contactPhoneText" data-es="Cargando…" data-en="Loading…">Cargando…</span></a></p>
-                    <a href="#"
-                       id="contactWhatsappLink"
-                       target="_blank"
-                       rel="nofollow"
+                    <p><a href="tel:+522216498364">+52 221 649 8364</a></p>
+                    <a href="https://wa.me/522216498364?text=Hola%20Calcetines%20México%2C%20quiero%20información%20sobre%20sus%20calcetines%20personalizados." 
+                       target="_blank" 
                        class="btn-whatsapp">
                         💬 WhatsApp
                     </a>
@@ -987,7 +1102,7 @@
                 <div class="contact-card">
                     <div class="icon">📍</div>
                     <h3 data-es="Dirección" data-en="Address">Dirección</h3>
-                    <p><strong data-es="Puebla, Puebla" data-en="Puebla, Puebla">Puebla, Puebla</strong><br>México</p>
+                    <p><strong>2920 Sauces, Las Animas</strong><br>Puebla, Puebla, México</p>
                     <p style="font-size:0.9rem; color:#6b5f53; margin-top:6px;" data-es="Visita con cita previa" data-en="Visit by appointment only">Visita con cita previa</p>
                 </div>
             </div>
@@ -1001,84 +1116,6 @@
     </section>
 
     <!-- ============================================ -->
-    <!-- CUESTIONARIO DE COTIZACIÓN / INQUIRY FORM   -->
-    <!-- ============================================ -->
-    <section id="cotizacion" class="bg-light">
-        <div class="container">
-            <h2 class="section-title" data-es="Solicita tu <span>cotización</span>" data-en="Request your <span>quote</span>">Solicita tu <span>cotización</span></h2>
-            <p class="section-sub" data-es="Cuéntanos qué necesitas y te contactamos con tu cotización personalizada."
-               data-en="Tell us what you need and we'll get back to you with a custom quote.">
-                Cuéntanos qué necesitas y te contactamos con tu cotización personalizada.
-            </p>
-
-            <form action="https://formsubmit.co/info@CalcetinesMexico.com" method="POST" class="inquiry-form">
-                <input type="hidden" name="_subject" value="Nueva solicitud de cotización - Calcetines México" />
-                <input type="hidden" name="_captcha" value="true" />
-                <input type="hidden" name="_template" value="table" />
-                <!-- Honeypot field to reduce spam bots -->
-                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-
-                <div class="form-row form-row-double">
-                    <div>
-                        <label data-es="Nombre completo" data-en="Full name">Nombre completo</label>
-                        <input type="text" name="nombre" required />
-                    </div>
-                    <div>
-                        <label data-es="Empresa (opcional)" data-en="Company (optional)">Empresa (opcional)</label>
-                        <input type="text" name="empresa" />
-                    </div>
-                </div>
-
-                <div class="form-row form-row-double">
-                    <div>
-                        <label data-es="Correo electrónico" data-en="Email">Correo electrónico</label>
-                        <input type="email" name="email" required />
-                    </div>
-                    <div>
-                        <label data-es="Teléfono" data-en="Phone">Teléfono</label>
-                        <input type="tel" name="telefono" required />
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <label data-es="¿Qué te interesa?" data-en="What are you interested in?">¿Qué te interesa?</label>
-                    <select name="interes" required>
-                        <option value="" data-es="Selecciona una opción" data-en="Select an option">Selecciona una opción</option>
-                        <option value="Hombres" data-es="Colección Hombres" data-en="Men's Collection">Colección Hombres</option>
-                        <option value="Especialidada" data-es="Línea Especialidada (antibacterial / bambú / plata)" data-en="Specialty Line (antibacterial / bamboo / silver)">Línea Especialidada (antibacterial / bambú / plata)</option>
-                        <option value="Mundial 2026" data-es="Diseños Mundial 2026" data-en="World Cup 2026 Designs">Diseños Mundial 2026</option>
-                        <option value="Diseño personalizado" data-es="Diseño 100% personalizado" data-en="100% custom design">Diseño 100% personalizado</option>
-                        <option value="Mayoreo" data-es="Pedido al mayoreo / marca propia" data-en="Wholesale / private label">Pedido al mayoreo / marca propia</option>
-                        <option value="Otro" data-es="Otro" data-en="Other">Otro</option>
-                    </select>
-                </div>
-
-                <div class="form-row">
-                    <label data-es="Cantidad aproximada (pares)" data-en="Approximate quantity (pairs)">Cantidad aproximada (pares)</label>
-                    <select name="cantidad">
-                        <option value="" data-es="Selecciona una opción" data-en="Select an option">Selecciona una opción</option>
-                        <option value="1-50" data-es="1 – 50 pares" data-en="1 – 50 pairs">1 – 50 pares</option>
-                        <option value="51-200" data-es="51 – 200 pares" data-en="51 – 200 pairs">51 – 200 pares</option>
-                        <option value="201-1000" data-es="201 – 1,000 pares" data-en="201 – 1,000 pairs">201 – 1,000 pares</option>
-                        <option value="1000+" data-es="Más de 1,000 pares" data-en="More than 1,000 pairs">Más de 1,000 pares</option>
-                    </select>
-                </div>
-
-                <div class="form-row">
-                    <label data-es="Cuéntanos más sobre tu proyecto" data-en="Tell us more about your project">Cuéntanos más sobre tu proyecto</label>
-                    <textarea name="mensaje" placeholder="Colores, tallas, plazos, logotipo, etc." data-es-placeholder="Colores, tallas, plazos, logotipo, etc." data-en-placeholder="Colors, sizes, timelines, logo, etc."></textarea>
-                </div>
-
-                <button type="submit" class="btn" data-es="📩 Enviar solicitud" data-en="📩 Send request">📩 Enviar solicitud</button>
-            </form>
-            <p class="form-note" data-es="Al enviar este formulario aceptas que te contactemos para darte seguimiento a tu cotización. Respondemos en menos de 24 h."
-               data-en="By submitting this form you agree to be contacted regarding your quote. We reply in less than 24 hrs.">
-               Al enviar este formulario aceptas que te contactemos para darte seguimiento a tu cotización. Respondemos en menos de 24 h.
-            </p>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
     <!-- FOOTER                                       -->
     <!-- ============================================ -->
     <footer>
@@ -1087,15 +1124,12 @@
             <div class="footer-links">
                 <a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a>
                 <a href="#disenos" data-es="Diseños" data-en="Designs">Diseños</a>
-                <a href="#hombres" data-es="Hombres" data-en="Men's">Hombres</a>
-                <a href="#especialidada" data-es="Especialidada" data-en="Specialty">Especialidada</a>
                 <a href="#proceso" data-es="Proceso" data-en="Process">Proceso</a>
-                <a href="#mundial2026" data-es="Mundial 2026" data-en="World Cup 2026">Mundial 2026</a>
-                <a href="#cotizacion" data-es="Cotización" data-en="Get a Quote">Cotización</a>
+                <a href="#cotizacion" data-es="Cotización" data-en="Quote">Cotización</a>
                 <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
                 <a href="mailto:info@CalcetinesMexico.com">info@CalcetinesMexico.com</a>
             </div>
-            <p style="margin-top:12px; font-size:0.8rem; color:#888;">Puebla, Puebla · México · <span id="footerPhoneText">Cargando…</span></p>
+            <p style="margin-top:12px; font-size:0.8rem; color:#888;">2920 Sauces, Las Animas, Puebla, Puebla · México · +52 221 6498364</p>
         </div>
     </footer>
 
@@ -1106,12 +1140,12 @@
         // ============================================
         // DESIGN GALLERY - Add new designs here!
         // ============================================
-        const worldCupDesigns = [
+        const mexicoDesigns = [
             {
                 image: "mexico_socks_1.jpg",
                 title: "Clásico Tricolor",
-                subtitle_es: "Edición Mundial 2026",
-                subtitle_en: "World Cup 2026 Edition"
+                subtitle_es: "Edición México",
+                subtitle_en: "Mexico Edition"
             },
             {
                 image: "OIG41.jpg",
@@ -1160,76 +1194,12 @@
             }
         ];
 
-        // Men's collection (Hombres)
-        const mensDesigns = [
-            {
-                image: "fraternity.png",
-                title: "Fraternity",
-                subtitle_es: "Calcetín de fraternidad",
-                subtitle_en: "Fraternity sock"
-            },
-            {
-                image: "fraternity1.jpeg",
-                title: "Fraternity II",
-                subtitle_es: "Calcetín de fraternidad, estilo 2",
-                subtitle_en: "Fraternity sock, style 2"
-            },
-            {
-                image: "fraternity2.jpeg",
-                title: "Fraternity III",
-                subtitle_es: "Calcetín de fraternidad, estilo 3",
-                subtitle_en: "Fraternity sock, style 3"
-            },
-            {
-                image: "short_black.png",
-                title: "Corte Corto Negro",
-                subtitle_es: "Calcetín corto negro",
-                subtitle_en: "Black ankle sock"
-            },
-            {
-                image: "tennis_black_white.png",
-                title: "Tenis Negro y Blanco",
-                subtitle_es: "Calcetín de tenis blanco y negro",
-                subtitle_en: "Black & white tennis sock"
-            },
-            {
-                image: "tennis_white_red.jpeg",
-                title: "Tenis Blanco y Rojo",
-                subtitle_es: "Calcetín de tenis blanco y rojo",
-                subtitle_en: "White & red tennis sock"
-            }
-        ];
-
-        // Specialty collection (Especialidada) - antibacterial, silver nanoparticles, bamboo thread
-        const specialtyDesigns = [
-            {
-                image: "bamboo_silver.png",
-                title: "Bambú & Plata",
-                subtitle_es: "Fibra de bambú + nanopartículas de plata",
-                subtitle_en: "Bamboo fiber + silver nanoparticles"
-            },
-            {
-                image: "short_brown_black_coolmax.png",
-                title: "Coolmax Café/Negro",
-                subtitle_es: "Corto Coolmax café y negro",
-                subtitle_en: "Coolmax brown & black ankle sock"
-            },
-            {
-                image: "coolmax_premiere.jpeg",
-                title: "Coolmax Premiere",
-                subtitle_es: "Línea Coolmax Premiere",
-                subtitle_en: "Coolmax Premiere line"
-            }
-        ];
-
         // ============================================
         // RENDER GALLERIES
         // ============================================
         function renderGalleries() {
             const gallerySmall = document.getElementById('designGallerySmall');
             const galleryLarge = document.getElementById('designGalleryLarge');
-            const galleryMen = document.getElementById('designGalleryMen');
-            const gallerySpecialty = document.getElementById('designGallerySpecialty');
 
             const lang = localStorage.getItem('calcetinesLang') || 'es';
 
@@ -1249,24 +1219,14 @@
                 }).join('');
             }
 
-            // Render small gallery (World Cup designs)
+            // Render small gallery (Mexico collection)
             if (gallerySmall) {
-                gallerySmall.innerHTML = createGalleryHTML(worldCupDesigns, lang);
+                gallerySmall.innerHTML = createGalleryHTML(mexicoDesigns, lang);
             }
 
             // Render large gallery (New designs)
             if (galleryLarge) {
                 galleryLarge.innerHTML = createGalleryHTML(newDesigns, lang);
-            }
-
-            // Render Men's collection gallery
-            if (galleryMen) {
-                galleryMen.innerHTML = createGalleryHTML(mensDesigns, lang);
-            }
-
-            // Render Specialty collection gallery
-            if (gallerySpecialty) {
-                gallerySpecialty.innerHTML = createGalleryHTML(specialtyDesigns, lang);
             }
         }
 
@@ -1275,37 +1235,6 @@
 
         // Re-render when language changes
         document.addEventListener('languageChanged', renderGalleries);
-    </script>
-
-    <!-- ============================================ -->
-    <!-- JAVASCRIPT: PHONE OBFUSCATION                -->
-    <!-- Decodes the phone number at page load and    -->
-    <!-- injects it into the DOM, so it never sits in -->
-    <!-- the raw page source as plain, scrapeable text-->
-    <!-- ============================================ -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var phoneDisplay = atob('KzUyIDIyMSA2NDkgODM2NA=='); // "+52 221 649 8364"
-            var phoneDigits  = atob('NTIyMjE2NDk4MzY0');         // "522216498364"
-
-            var phoneLink = 'tel:+' + phoneDigits;
-            var waMessage = 'Hola Calcetines México, quiero información sobre sus calcetines personalizados.';
-            var waLink = 'https://wa.me/' + phoneDigits + '?text=' + encodeURIComponent(waMessage);
-
-            // Visible phone text (contact card + footer)
-            ['contactPhoneText', 'footerPhoneText'].forEach(function(id) {
-                var el = document.getElementById(id);
-                if (el) { el.textContent = phoneDisplay; }
-            });
-
-            // Click-to-call link
-            var phoneLinkEl = document.getElementById('contactPhoneLink');
-            if (phoneLinkEl) { phoneLinkEl.href = phoneLink; }
-
-            // WhatsApp link
-            var waLinkEl = document.getElementById('contactWhatsappLink');
-            if (waLinkEl) { waLinkEl.href = waLink; }
-        });
     </script>
 
     <!-- ============================================ -->
@@ -1345,13 +1274,9 @@
                     }
                 });
 
-                // Translate placeholder attributes (e.g. inquiry form textarea)
-                const placeholderEls = document.querySelectorAll('[data-es-placeholder][data-en-placeholder]');
-                placeholderEls.forEach(el => {
-                    const placeholderText = el.getAttribute('data-' + lang + '-placeholder');
-                    if (placeholderText) {
-                        el.setAttribute('placeholder', placeholderText);
-                    }
+                // Placeholders traducibles
+                document.querySelectorAll('[data-ph-es][data-ph-en]').forEach(el => {
+                    el.placeholder = el.getAttribute('data-ph-' + lang);
                 });
 
                 document.documentElement.lang = (lang === 'en') ? 'en-US' : 'es-MX';
@@ -1386,6 +1311,138 @@
                 });
             });
 
+        })();
+    </script>
+
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT: Quote Form                      -->
+    <!-- ============================================ -->
+    <script>
+        (function() {
+            // ---- CONFIGURACIÓN ----
+            const WHATSAPP_NUMBER = '522216498364';
+            const EMAIL_TO = 'info@CalcetinesMexico.com';
+            // Opcional: pega aquí la URL de un servicio de formularios (Formspree, FormSubmit, Getform, etc.)
+            // para recibir las solicitudes (con archivos adjuntos) directo en tu correo.
+            // Si se deja vacío, el formulario abre WhatsApp con el mensaje ya redactado.
+            const FORM_ENDPOINT = '';
+
+            const form = document.getElementById('quoteForm');
+            if (!form) return;
+            const statusEl = document.getElementById('quoteStatus');
+            const submitLabel = document.getElementById('quoteSubmitLabel');
+            const fileWrap = document.getElementById('fileWrap');
+            const lang = () => localStorage.getItem('calcetinesLang') || 'es';
+
+            const T = {
+                needSize:  { es: 'Por favor elige al menos un tamaño (futbolero, crew, tine, liner u otro).', en: 'Please choose at least one size/style (soccer, crew, tine, liner, or other).' },
+                sending:   { es: 'Enviando…', en: 'Sending…' },
+                okEndpoint:{ es: '¡Gracias! Recibimos tu solicitud. Te responderemos en menos de 24 h. Recuerda mandarnos tu logo o diseño por WhatsApp o correo.', en: 'Thank you! We received your request and will reply within 24 hrs. Remember to send your logo or design by WhatsApp or email.' },
+                okWa:      { es: 'Se abrió WhatsApp con tu solicitud. Presiona enviar y adjunta tu logo o diseño en ese chat.', en: 'WhatsApp opened with your request. Press send and attach your logo or design in that chat.' },
+                okMail:    { es: 'Se abrió tu programa de correo. Adjunta tu logo o diseño antes de enviar.', en: 'Your email app opened. Attach your logo or design before sending.' },
+                fail:      { es: 'No se pudo enviar. Inténtalo por WhatsApp o escríbenos a ' + EMAIL_TO + '.', en: 'Could not send. Please try WhatsApp or write to ' + EMAIL_TO + '.' }
+            };
+            const t = key => T[key][lang()];
+
+            // Si hay endpoint: permitir adjuntar archivos y cambiar texto del botón
+            if (FORM_ENDPOINT) {
+                fileWrap.hidden = false;
+                submitLabel.dataset.es = 'Enviar solicitud de cotización';
+                submitLabel.dataset.en = 'Send quote request';
+                submitLabel.textContent = lang() === 'en' ? submitLabel.dataset.en : submitLabel.dataset.es;
+                document.addEventListener('languageChanged', () => {
+                    submitLabel.textContent = submitLabel.dataset[lang()];
+                });
+            }
+
+            const get = n => (form.elements[n] && form.elements[n].value || '').trim();
+            const checked = n => Array.from(form.querySelectorAll('input[name="' + n + '"]:checked')).map(i => i.value);
+
+            // El mensaje siempre se redacta en español para el equipo de ventas
+            function buildMessage() {
+                const L = [];
+                L.push('SOLICITUD DE COTIZACIÓN – CALCETINES PERSONALIZADOS');
+                L.push('');
+                L.push('Nombre: ' + get('nombre'));
+                if (get('empresa')) L.push('Empresa/marca: ' + get('empresa'));
+                L.push('Teléfono/WhatsApp: ' + get('telefono'));
+                if (get('correo')) L.push('Correo: ' + get('correo'));
+                L.push('');
+                L.push('1. Volumen (pares por color base): ' + get('volumen'));
+
+                const mat = [get('material')].concat(checked('material_nose')).filter(Boolean).join(' | ');
+                L.push('2. Composición de material: ' + (mat || 'No especificado'));
+
+                const dis = [get('diseno'), get('enlace') ? 'Enlace: ' + get('enlace') : ''].filter(Boolean).join(' | ');
+                L.push('3. Diseños/logos: ' + (dis || 'Se enviará muestra') + ' (muestra por WhatsApp/correo)');
+
+                const tam = checked('tamano').concat(get('tamano_otro') ? [get('tamano_otro')] : []);
+                L.push('4. Tamaño: ' + tam.join(', '));
+
+                const emp = checked('empaque')[0] || 'No especificado';
+                const tipo = checked('empaque_tipo');
+                L.push('5. Empaque: ' + emp + (tipo.length ? ' (' + tipo.join(', ') + ')' : ''));
+
+                if (get('comentarios')) { L.push(''); L.push('Comentarios: ' + get('comentarios')); }
+                return L.join('\n');
+            }
+
+            function validSize() {
+                const ok = checked('tamano').length > 0 || get('tamano_otro');
+                if (!ok) {
+                    statusEl.className = 'status err';
+                    statusEl.textContent = t('needSize');
+                    const first = form.querySelector('input[name="tamano"]');
+                    if (first) first.focus();
+                }
+                return ok;
+            }
+
+            function track(method) {
+                if (typeof gtag === 'function') gtag('event', 'generate_lead', { method: method, form: 'cotizacion' });
+            }
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                if (get('website')) return; // honeypot
+                statusEl.className = 'status';
+                statusEl.textContent = '';
+                if (!validSize()) return;
+                const message = buildMessage();
+
+                if (FORM_ENDPOINT) {
+                    statusEl.textContent = t('sending');
+                    try {
+                        const fd = new FormData(form);
+                        fd.append('mensaje', message);
+                        const res = await fetch(FORM_ENDPOINT, { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
+                        if (!res.ok) throw new Error('HTTP ' + res.status);
+                        statusEl.className = 'status ok';
+                        statusEl.textContent = t('okEndpoint');
+                        track('form');
+                        form.reset();
+                    } catch (err) {
+                        statusEl.className = 'status err';
+                        statusEl.textContent = t('fail');
+                    }
+                } else {
+                    track('whatsapp');
+                    window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
+                    statusEl.className = 'status ok';
+                    statusEl.textContent = t('okWa');
+                }
+            });
+
+            document.getElementById('quoteMail').addEventListener('click', function() {
+                statusEl.className = 'status';
+                statusEl.textContent = '';
+                if (!form.reportValidity() || !validSize()) return;
+                track('email');
+                const subject = 'Solicitud de cotización – Calcetines personalizados';
+                window.location.href = 'mailto:' + EMAIL_TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(buildMessage());
+                statusEl.className = 'status ok';
+                statusEl.textContent = t('okMail');
+            });
         })();
     </script>
 </body>
